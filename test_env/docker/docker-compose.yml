@@ -1,0 +1,22 @@
+# run podman-compose up
+
+version: '1'
+
+services:
+  login:
+    build:
+      context: ./login_test
+    ports:
+      - "8001:80"
+
+  devices:
+    build:
+      context: ./devices_test
+    ports:
+      - "8002:80"
+
+  api:
+    build:
+      context: ./api_test
+    ports:
+      - "8003:80"

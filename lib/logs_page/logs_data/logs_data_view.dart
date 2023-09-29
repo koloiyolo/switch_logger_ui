@@ -58,7 +58,7 @@ class LogView extends StatelessWidget {
           Flexible(
             child: ListView.builder(
                 padding: const EdgeInsets.all(16),
-                itemCount: snapshot.data!.length,
+                itemCount: snapshot.data![deviceName].length,
                 itemBuilder: ((context, index) {
                   var log = snapshot.data![deviceName];
                   return ExpansionTile(

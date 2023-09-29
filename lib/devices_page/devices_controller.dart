@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:switch_logger_ui/logs_page/logs_rail.dart';
 
 Future<Map> fetchdevices() async {
-  var url = 'http://localhost:8003/';
+  var url = 'http://localhost:8002/';
   final response = await http.get(Uri.parse(url));
 
   if (response.statusCode == 200) {
